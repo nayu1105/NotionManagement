@@ -1,4 +1,4 @@
-package com.example.backend.api.entity;
+package com.example.backend.api.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,10 +11,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Page {
-
+public class PageSummary {
     private Integer id;
     private String title;
-    private String context;
-    private Integer parent_id;
+
 }
