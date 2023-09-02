@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  database:
+    container_name: notion-database
+    platform: linux/amd64
+    image: mysql:8.0.34
+    ports:
+      - "3306:3306"
+    command:
+      --default-authentication-plugin=mysql_native_password
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_unicode_ci
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=notion
+      - MYSQL_USER=notion
+      - MYSQL_PASSWORD=notion
+      - TZ=Asia/Seoul
+    volumes:
+      - ./mysql/volume:/var/lib/mysql
