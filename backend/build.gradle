@@ -22,10 +22,19 @@ repositories {
 }
 
 dependencies {
+    //spring
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    compileOnly 'org.projectlombok:lombok'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+    // lombock
+    compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
+
+    //db
+    runtimeOnly 'com.mysql:mysql-connector-j'
+    implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
+
+    //test
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
