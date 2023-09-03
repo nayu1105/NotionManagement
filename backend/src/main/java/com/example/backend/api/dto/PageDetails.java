@@ -2,7 +2,7 @@ package com.example.backend.api.dto;
 
 import java.util.List;
 
-class PageDetails {
+public class PageDetails {
     private long id;
     private String title;
     private String context;
