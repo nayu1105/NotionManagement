@@ -14,7 +14,7 @@
 
 ### API
 ```java
-GET /post/{id}
+GET /page/{id}
 ```
 
 ### Reponse 결과
